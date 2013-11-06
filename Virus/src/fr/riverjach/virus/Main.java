@@ -25,7 +25,9 @@ public class Main {
 			Coup coup = new Coup();
 			coup.setCouleur('@');
 			do {
+				System.out.println("X : ");
 				coup.setX(scanner.nextInt());
+				System.out.println("Y : ");
 				coup.setY(scanner.nextInt());
 			} while (!virus.coupLegal(coup));
 			virus.joue(coup);
